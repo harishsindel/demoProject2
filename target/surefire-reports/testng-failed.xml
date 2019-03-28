@@ -8,6 +8,7 @@
           <include name="launchDriver"/>
           <include name="Test2"/>
           <include name="Test3"/>
+          <include name="closeDriver"/>
           <include name="Test1"/>
         </methods>
       </class> <!-- com.AutomationTests.demoProject.TestClass1 -->
