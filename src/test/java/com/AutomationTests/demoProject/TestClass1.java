@@ -16,39 +16,25 @@ public class TestClass1 {
 	@BeforeMethod
 	public void launchDriver() {
 		System.out.println("["+System.getProperty("user.dir")+"]");
-		System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
-		driver = new ChromeDriver();
-//		System.setProperty("webdriver.safari.driver","‎⁨‎⁨drivers/safaridriver");
-//		driver = new SafariDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().fullscreen();
+
 	}
 	
 	@AfterMethod
 	public void closeDriver() {
-		driver.quit();
+		System.out.println("closeDriver");
 	}
 	
 	@Test
 	public void Test1() {
 		System.out.println("Test1");
-		driver.navigate().to("www.google.com");
-//		System.out.println("Test1 title: "+driver.getTitle());
-		System.out.println("Test1");
 	}
 	@Test
 	public void Test2() {
-		System.out.println("Test2");
-		driver.navigate().to("www.twitter.com");
-//		System.out.println("Test2 title: "+driver.getTitle());
 		System.out.println("Test2");
 		
 	}
 	@Test
 	public void Test3() {
-		System.out.println("Test3");
-		driver.navigate().to("www.facebook.com");
-//		System.out.println("Test3 title: "+driver.getTitle());
 		System.out.println("Test3");
 	}
 
