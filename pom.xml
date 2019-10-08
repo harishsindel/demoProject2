@@ -220,8 +220,6 @@
                 <suiteXmlFiles>
                 <!-- Add the suite for run -->
                    <suiteXmlFile>testng.xml</suiteXmlFile>
-                   <!-- <suiteXmlFile>${carrentals.executeTest}</suiteXmlFile>
-                   <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>-->
                 </suiteXmlFiles>
             </configuration>
             
